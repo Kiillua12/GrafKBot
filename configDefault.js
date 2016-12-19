@@ -1,5 +1,5 @@
 var config = {};
 
-config.token = "MjU5Njk0MTI3MTQxMjI0NDQ4.CzmRhw.n5VZiTnEJPlkgVP4A7dWk8NfNWU";
+config.token = "insert your token";
 
 module.exports = config;
