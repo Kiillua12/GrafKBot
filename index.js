@@ -15,3 +15,4 @@ bot.on('ready', () => {
 });
 
 bot.login(config.token);
+console.log(bot.user);
