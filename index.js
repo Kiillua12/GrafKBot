@@ -15,16 +15,17 @@ bot.on('ready', () => {
 bot.on("message", msg => {
     if (msg.content.startsWith("ping"))
       msg.channel.sendMessage("pong!");
+
     else if (msg.content.startsWith("coucou"))
       msg.channel.sendMessage("toi meme");
+
     else if (msg.content.startsWith("ytdl")){
       ytdl('https://www.youtube.com/watch?v=6Un9HLDCTCs', {
         filter: function(format){
-          format.container === "mp4";
-          return format;
+          return '133';
         }
       })
-      .pipe(fs.createWriteStream('video.mp4'));
+      .pipe(fs.createWriteStream('video3.mp4'));
     }
 });
 
