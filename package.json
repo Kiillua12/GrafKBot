@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Kiillua12/GrafKBot#readme",
   "dependencies": {
-    "discord.js": "^10.0.1"
+    "discord.js": "^10.0.1",
+    "ytdl-core": "^0.7.20"
   }
 }
