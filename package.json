@@ -1,0 +1,22 @@
+{
+  "name": "grafkbot",
+  "version": "1.0.0",
+  "description": "Npm pour grafkbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiillua12/GrafKBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiillua12/GrafKBot/issues"
+  },
+  "homepage": "https://github.com/Kiillua12/GrafKBot#readme",
+  "dependencies": {
+    "discord.js": "^10.0.1"
+  }
+}
