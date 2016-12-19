@@ -21,11 +21,9 @@ bot.on("message", msg => {
 
     else if (msg.content.startsWith("ytdl")){
       ytdl('https://www.youtube.com/watch?v=6Un9HLDCTCs', {
-        filter: function(format){
-          return '133';
-        }
+        filter: "audioonly"
       })
-      .pipe(fs.createWriteStream('video3.mp4'));
+      .pipe(fs.createWriteStream('audioTrack.webm'));
     }
 });
 
