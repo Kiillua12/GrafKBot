@@ -1,5 +1,5 @@
 var Discord = require("discord.js");
-var Ytdl = require("ytdl-core");
+//var Ytdl = require("ytdl-core");
 var config = require('./config.js');
 var bot = new Discord.Client();
 
