@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Kiillua12/GrafKBot#readme",
   "dependencies": {
     "discord.js": "^10.0.1",
+    "install": "^0.8.2",
+    "node-opus": "^0.2.4",
+    "npm": "^4.0.5",
+    "opusscript": "0.0.1",
     "google-cloud": "^0.45.1",
     "ytdl-core": "^0.7.20"
   }
