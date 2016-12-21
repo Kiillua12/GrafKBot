@@ -13,13 +13,23 @@ var bot = new Discord.Client();
 
 
 bot.on('ready', () => {
-  console.log("Le bot est prêt");
+  console.log("ready");
+  /*for ([id, gm] of bot.guilds.find(g => g).members){
+    if (gm.user.username === "GrafkBot (Lucas)"){
+      console.log("found");
+      gm.setMute(true);
+      console.log("muted");
+    }
+  }
+  */
+
+  
 });
 
 var PREFIX = "//";
 
 //Commandes.js
-bot.on("message", msg => { 
+bot.on("message", msg => {
 	var cmd = new Commandes(msg, PREFIX, bot);
 	cmd.execute();
 });
