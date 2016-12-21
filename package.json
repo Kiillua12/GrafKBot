@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Kiillua12/GrafKBot#readme",
   "dependencies": {
     "discord.js": "^10.0.1",
+    "ffmpeg": "0.0.4",
     "google-cloud": "^0.45.1",
     "google-speech": "0.0.5",
     "install": "^0.8.2",
