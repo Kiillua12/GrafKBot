@@ -1,6 +1,6 @@
 var config = {};
 
 config.token = "insert your token";
-config.tokenGoogle = "insert token google here"
+config.tokenGoogle = "insert google token here"
 
 module.exports = config;
