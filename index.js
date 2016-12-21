@@ -1,4 +1,4 @@
-var Discord = require("discord.js");
+﻿var Discord = require("discord.js");
 var Commandes = require("./commandes.js");
 /* Node opus pour l'audio du bot */
 var opus = require('node-opus');
