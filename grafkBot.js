@@ -1,11 +1,11 @@
 ﻿var Discord = require("discord.js");
 var Commandes = require("./commandes.js");
 /* Node opus pour l'audio du bot */
-//var opus = require('node-opus');
+var opus = require('node-opus');
 /* File System */
 var fs = require('fs');
 /* Youtube Downloader */
-//var ytdl = require("ytdl-core");
+var ytdl = require("ytdl-core");
 
 var config = require('./config.js');
 var bot = new Discord.Client();
