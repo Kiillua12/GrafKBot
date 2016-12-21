@@ -16,7 +16,7 @@ bot.on('ready', () => {
   console.log("Le bot est prêt");
 });
 
-var PREFIX = "//";
+var PREFIX = "!";
 
 //Commandes.js
 bot.on("message", msg => { 

@@ -32,18 +32,23 @@ commandes.prototype.execute = function () {
     }
 
     else if (this.msg.content === this.PREFIX + "qui est en ligne" || this.msg.content == this.PREFIX + "who"){
-      var usersID = this.bot.users.keys();
-      var onlineUsers = [];
-
-      /* On utilise for.. of.. pour parcourir des maps */
-      for (var k of usersID){
-        var _user = this.bot.users.get(k);
-        if (_user.presence.status === "online" && !_user.bot){
-          onlineUsers.push(_user.username);
-        }
-      }
-      this.msg.channel.sendMessage("Les utilisateurs en ligne sont :\n" + onlineUsers);
-    }
+	var lstUsers = this.bot.users;
+	this.msg.channel.sendMessage("Les utilisateurs en ligne plus court sont :\n" + lstUsers.filter(u=>!u.bot && u.presence.status == "online").map(u=>u.username));
+	
+	}
+	
+	else if(this.msg.content.startsWith(this.PREFIX + "listen"))
+	{
+		var channel = this.bot.channels;
+		var voiceChannel = channel.filter(u=>u.type == "voice" && u.name == this.msg.content.split(" ")[1]).first();
+		if (voiceChannel == null)
+			this.msg.channel.sendMessage("Ce channel n'existe pas ou vous n'en avez pas indiqué")
+		else {
+			voiceChannel.join().then(connection => {
+			 const receiver = connection.createReceiver();
+			});
+		}
+	}
 }
 
  module.exports = commandes;
