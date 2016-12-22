@@ -48,7 +48,8 @@ commandes.prototype.execute = function () {
 	}
 
 	else if (this.msg.content === this.PREFIX + "ici!"){
-        vc = this.msg.member.voiceChannel
+        
+        vc = this.msg.member ? this.msg.member.voiceChannel || null : null;
         if( vc != null)
             vc.join();
 	}
