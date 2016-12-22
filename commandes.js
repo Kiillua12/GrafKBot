@@ -14,7 +14,7 @@ commandes.prototype.execute = function () {
         this.PREFIX + "coucou -- dis bonjour\n"+
         this.PREFIX + "ytdl -- télécharge la chanson lose yourself en format audio\n"+
         this.PREFIX + "who -- affiche la liste des utilisateurs humains connectés\n"+
-	    this.PREFIX + "connect@<nomSalon> -- connect au salon indiqué\n"+
+		this.PREFIX + "connect@<nomSalon> -- connect au salon indiqué\n"+
 	    this.PREFIX + "ici! -- dis au bot de venir dans le salon de l'auteur");
     }
 
