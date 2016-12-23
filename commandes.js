@@ -48,6 +48,12 @@ commandes.prototype.execute = function () {
 			 const receiver = connection.createReceiver();
 			});
 		}
+		
+	}
+	
+		else if(this.msg.content ==(this.PREFIX + "come")) {
+		
+		this.msg.member.voiceChannel.join();
 	}
 }
 
